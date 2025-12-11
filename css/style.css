@@ -101,3 +101,36 @@ footer {
     color: #555;
     font-size: 0.9rem;
 }
+
+.product-photo {
+  max-width: 100%;
+  height: auto;       
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.polaroid-frame {
+  background: #fff;
+  padding: 12px 12px 36px;   
+  display: inline-block;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: center;
+  justify-items: center;
+  padding: 28px 16px;
+}
+
+@media (min-width: 800px) {
+  .hero { grid-template-columns: 1fr 1fr; }
+  .hero-figure { max-width: 420px; }
+  .hero-text { padding: 10px 20px; text-align: left; }
+}
