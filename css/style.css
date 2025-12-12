@@ -183,3 +183,8 @@ footer {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+.top-nav a.active {
+    color: #00c8ff;
+    font-weight: 700;
+}
