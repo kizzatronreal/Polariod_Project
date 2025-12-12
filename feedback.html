@@ -24,42 +24,41 @@
     <main>
         <section class="hero">
             <div class="hero-text" style="grid-column: 1 / -1; text-align: center;">
-                <h1>Share Your Feedback</h1>
-                <p>Tell us about your experience with the Polaroid Sun 600</p>
+                <h1>Tell Us Your Story</h1>
+                <p>Got a Sun 600? We want to hear about it!</p>
             </div>
         </section>
 
         <section class="info-section">
-            <h2>We Value Your Opinion</h2>
+            <h2>Share Your Experience</h2>
             <p>
-                Your feedback helps us improve our products and services. Whether you have 
-                a suggestion, compliment, or concern, we want to hear from you. Please take 
-                a moment to share your thoughts about the Polaroid Sun 600 camera.
+                Whether you've had your Sun 600 for decades or just picked one up, we'd love to hear 
+                from you.
             </p>
         </section>
 
         <section class="info-section">
-            <h2>Customer Feedback Form</h2>
+            <h2>Feedback Form</h2>
             
             <div id="successMessage" class="success-message" style="display: none;">
-                <p><strong>Thank you for your feedback!</strong></p>
-                <p>We appreciate you taking the time to share your thoughts with us.</p>
+                <p><strong>Thanks for sharing!</strong></p>
+                <p>We really appreciate you taking the time to tell us about your experience.</p>
             </div>
 
             <form id="feedbackForm" class="feedback-form">
                 <div class="form-group">
-                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <label for="fullName">Name <span class="required">*</span></label>
                     <input 
                         type="text" 
                         id="fullName" 
                         name="fullName" 
                         required 
-                        placeholder="Enter your full name"
+                        placeholder="What should we call you?"
                     />
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email Address <span class="required">*</span></label>
+                    <label for="email">Email <span class="required">*</span></label>
                     <input 
                         type="email" 
                         id="email" 
@@ -70,88 +69,87 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Phone Number (Optional)</label>
+                    <label for="phone">Phone (optional)</label>
                     <input 
                         type="tel" 
                         id="phone" 
                         name="phone" 
-                        placeholder="(555) 123-4567"
+                        placeholder="Only if you want us to call"
                     />
                 </div>
 
                 <div class="form-group">
-                    <label for="category">Feedback Category <span class="required">*</span></label>
+                    <label for="category">What's this about? <span class="required">*</span></label>
                     <select id="category" name="category" required>
-                        <option value="">-- Select a category --</option>
+                        <option value="">-- Pick one --</option>
                         <option value="camera">Camera Performance</option>
                         <option value="film">Film Quality</option>
                         <option value="customer-service">Customer Service</option>
                         <option value="warranty">Warranty/Repairs</option>
-                        <option value="general">General Feedback</option>
-                        <option value="other">Other</option>
+                        <option value="general">Just General Feedback</option>
+                        <option value="other">Something Else</option>
                     </select>
                 </div>
 
-                <!-- Rating -->
                 <div class="form-group">
-                    <label>Overall Rating <span class="required">*</span></label>
+                    <label>How's it going? <span class="required">*</span></label>
                     <div class="rating-group">
                         <input type="radio" id="rating5" name="rating" value="5" required />
-                        <label for="rating5">★★★★★ Excellent</label>
+                        <label for="rating5">★★★★★ Love it!</label>
 
                         <input type="radio" id="rating4" name="rating" value="4" />
-                        <label for="rating4">★★★★☆ Good</label>
+                        <label for="rating4">★★★★☆ Pretty good</label>
 
                         <input type="radio" id="rating3" name="rating" value="3" />
-                        <label for="rating3">★★★☆☆ Average</label>
+                        <label for="rating3">★★★☆☆ It's alright</label>
 
                         <input type="radio" id="rating2" name="rating" value="2" />
-                        <label for="rating2">★★☆☆☆ Fair</label>
+                        <label for="rating2">★★☆☆☆ Could be better</label>
 
                         <input type="radio" id="rating1" name="rating" value="1" />
-                        <label for="rating1">★☆☆☆☆ Poor</label>
+                        <label for="rating1">★☆☆☆☆ Not great</label>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Do you own a Polaroid Sun 600? <span class="required">*</span></label>
+                    <label>Do you own a Sun 600? <span class="required">*</span></label>
                     <div class="radio-group">
                         <input type="radio" id="ownYes" name="ownership" value="yes" required />
-                        <label for="ownYes">Yes, I own one</label>
+                        <label for="ownYes">Yep, I've got one</label>
 
                         <input type="radio" id="ownNo" name="ownership" value="no" />
-                        <label for="ownNo">No, but I'm interested</label>
+                        <label for="ownNo">Not yet, but interested</label>
 
                         <input type="radio" id="ownPrevious" name="ownership" value="previous" />
-                        <label for="ownPrevious">I previously owned one</label>
+                        <label for="ownPrevious">Used to have one</label>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Which features do you use most? (Check all that apply)</label>
+                    <label>Which features do you actually use?</label>
                     <div class="checkbox-group">
                         <input type="checkbox" id="flash" name="features" value="flash" />
                         <label for="flash">Built-in Flash</label>
 
                         <input type="checkbox" id="lightenDarken" name="features" value="lighten-darken" />
-                        <label for="lightenDarken">Lighten/Darken Control</label>
+                        <label for="lightenDarken">Lighten/Darken Slider</label>
 
                         <input type="checkbox" id="autoExposure" name="features" value="auto-exposure" />
                         <label for="autoExposure">Automatic Exposure</label>
 
                         <input type="checkbox" id="quickDevelop" name="features" value="quick-develop" />
-                        <label for="quickDevelop">Quick Development Time</label>
+                        <label for="quickDevelop">Quick Development</label>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="comments">Your Comments <span class="required">*</span></label>
+                    <label for="comments">Tell us more <span class="required">*</span></label>
                     <textarea 
                         id="comments" 
                         name="comments" 
                         rows="6" 
                         required 
-                        placeholder="Please share your detailed feedback, suggestions, or comments here..."
+                        placeholder="What's on your mind? Got any good stories?"
                     ></textarea>
                     <span class="char-counter" id="charCounter">0 / 500 characters</span>
                 </div>
@@ -159,22 +157,20 @@
                 <div class="form-group">
                     <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
                     <label for="newsletter">
-                        Sign me up for the Polaroid newsletter to receive product updates and special offers
+                        Yeah, send me updates about Polaroid stuff
                     </label>
                 </div>
 
                 <div class="form-actions">
-                    <button type="submit" class="submit-btn">Submit Feedback</button>
-                    <button type="reset" class="reset-btn">Clear Form</button>
+                    <button type="submit" class="submit-btn">Send It</button>
+                    <button type="reset" class="reset-btn">Start Over</button>
                 </div>
 
                 <p class="form-note">
-                    <span class="required">*</span> Required fields
+                    <span class="required">*</span> These fields are required
                 </p>
             </form>
         </section>
-
-
 
     </main>
 
